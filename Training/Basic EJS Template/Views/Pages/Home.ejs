@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include('../Partials/Head.ejs')%>
+</head>
+
+<body>
+        <header>
+            <%-include('../partials/Header.ejs')%>
+        </header>
+    <ul>
+
+        <% datas.forEach((data)=> { %>   
+            <li>
+                <strong>
+                    <%= data.name %>
+                </strong>
+                is <%= data.age %>
+                    Year Old
+            </li>
+            <% }); %>
+
+    </ul>
+    <footer>
+        <%-include('../partials/Footer.ejs')%>
+    </footer>
+</body>
+
+</html>
