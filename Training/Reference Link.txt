@@ -1,0 +1,13 @@
+bcrypt Password---->https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
+
+CRUD Operation With Mongoose---------->https://www.digitalocean.com/community/tutorials/nodejs-crud-operations-mongoose-mongodb-atlas
+
+Mongodb with Mongoose------>https://www.tutorialkart.com/nodejs/mongoose/insert-multiple-documents-to-mongodb/
+
+EJS Basic Template----->https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+
+How to get selected value in dropdown list using JavaScript ------>https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/
+
+Role Base Auth Youtube Video ------> https://www.youtube.com/watch?v=Rfid1N_pJa4
+
+Passport Auth Video------->https://www.youtube.com/watch?v=lbmOoZuElKI

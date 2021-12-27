@@ -1,0 +1,16 @@
+<div class="form-group mx-3 mb-2">Enter Your Name:
+    <input type="text" id="name" value="" placeholder="Enter Your Name">
+</div>
+<button onclick="clicks()" class="btn btn-primary mb-2">Confirm</button>
+<br>
+
+
+<h1 title="How are You?">Hello <span id="demo"></span></h1>
+
+<script>
+    function clicks() {
+        var x = document.getElementById("name").value;
+        document.getElementById("demo").innerHTML = x
+        document.getElementById("name").value=""
+    }
+</script>
