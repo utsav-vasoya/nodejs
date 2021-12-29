@@ -11,3 +11,9 @@ How to get selected value in dropdown list using JavaScript ------>https://www.g
 Role Base Auth Youtube Video ------> https://www.youtube.com/watch?v=Rfid1N_pJa4
 
 Passport Auth Video------->https://www.youtube.com/watch?v=lbmOoZuElKI
+
+External Api Call-------->https://pretagteam.com/question/external-api-calls-with-express-nodejs-and-require-module
+	      --------->https://stackoverflow.com/questions/39301227/external-api-calls-with-express-node-js-and-require-module
+                   ------->https://stackoverflow.com/questions/51844190/how-to-call-the-array-fields-inside-json-from-node-js
+
+Get Free API----->https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
