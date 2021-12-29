@@ -24,57 +24,57 @@ app.post('/', (req, res) => {
     res.send(user)
 })
 
-app.get('/', (req, res) => {
+// app.get('/', (req, res) => {
 
 
-    // userdata.find({}).then((result)=>{
-    // res.send(result)
-    // })
+//     // userdata.find({}).then((result)=>{
+//     // res.send(result)
+//     // })
 
-    // userdata.aggregate([
-    //     // { $sort: { name: 1 } },
-    //     {
-    //         $group: {
-    //             name: { $addToSet: "$name" },
-    //             _id: null
-    //         }
-    //     }
-    // ])
-    //     .then((result) => {
-    //         res.send(result)
-    //         console.log(result);
-    //     }).catch((err) => {
-    //         console.log(err)
-    //     })
+//     // userdata.aggregate([
+//     //     // { $sort: { name: 1 } },
+//     //     {
+//     //         $group: {
+//     //             name: { $addToSet: "$name" },
+//     //             _id: null
+//     //         }
+//     //     }
+//     // ])
+//     //     .then((result) => {
+//     //         res.send(result)
+//     //         console.log(result);
+//     //     }).catch((err) => {
+//     //         console.log(err)
+//     //     })
 
 
-    userdata.aggregate([
-        // { $group: { _id: { age: "$age", gender: "$gender" },name: { $addToSet: "$name" } }  },
+//     userdata.aggregate([
+//         // { $group: { _id: { age: "$age", gender: "$gender" },name: { $addToSet: "$name" } }  },
 
-        {
-            $group:
-            {
-                _id: "$name",
-                age: { $first: "$age" },
-                gender: { $first: "$gender" }
-            }
-        },
-        {
-            $project: {
-                "name": "$_id",
-                age: "$age",
-                gender: "$gender",
-                "_id": 0
-            }
-        }, { $sort: { age: 1 } }
-    ])
-        .then((result) => {
-            res.send(result)
-            // console.log(result);
-        }).catch((err) => {
-            console.log(err)
-        })
-})
+//         {
+//             $group:
+//             {
+//                 _id: "$name",
+//                 age: { $first: "$age" },
+//                 gender: { $first: "$gender" }
+//             }
+//         },
+//         {
+//             $project: {
+//                 "name": "$_id",
+//                 age: "$age",
+//                 gender: "$gender",
+//                 "_id": 0
+//             }
+//         }, { $sort: { age: 1 } }
+//     ])
+//         .then((result) => {
+//             res.send(result)
+//             // console.log(result);
+//         }).catch((err) => {
+//             console.log(err)
+//         })
+// })
 
 
 //Get All Data
@@ -91,8 +91,8 @@ app.get('/', (req, res) => {
 
 //name with all age and gender return
 // userdata.aggregate([
-//     { "$group": { "_id": "$name", "age": { "$addToSet": "$age" }, "gender": { "$addToSet": "$gender" } } },
-//     { "$project": { "name": "$_id", "AgeAndGender": { "$setUnion": ["$age", "$gender"] }, "_id": 0 } },
+//     { "$group": { "_id": "$name", "objectId": { "$addToSet": "$_id" }, "age": { "$addToSet": "$age" }, "gender": { "$addToSet": "$gender" } } },
+//     { "$project": { "name": "$_id", "AgeAndGender": { "$setUnion": ["$age", "$gender","$objectId"] }, "_id": 0 } },
 // ])
 //     .then((result) => {
 //         // res.send(result)
@@ -102,4 +102,19 @@ app.get('/', (req, res) => {
 //     })
 
 
+//Task In NoteBook---Name with get all id 
+app.get('/', (req, res) => {
+    userdata.aggregate([
+        { "$group": { "_id": "$name", "Id": { "$addToSet": "$_id" } } },
+        { $set: { name: "$_id" } },
+        { $unset: "_id" },
+        // { "$project": { "name": "$_id", "Id": "$Id", "_id": 0 } },
+    ])
+        .then((result) => {
+            res.send(result)
+            console.log(result);
+        }).catch((err) => {
+            console.log(err)
+        });
+});
 app.listen(port, console.log("server start"))

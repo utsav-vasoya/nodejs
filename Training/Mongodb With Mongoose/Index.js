@@ -26,6 +26,9 @@ var books = [{ name: 'Mongoose', price: 10, quantity: 10 },
 { name: 'NodeJS', price: 15, quantity: 15 },
 { name: 'Python', price: 20, quantity: 20 }];
 
-Book.collection.insertMany(books)
+Book.collection.insertMany(books,(err, book) => {
+    if (err) { return console.log(err) }
+    console.log(books);
+})
 
 app.listen(port, console.log("Server start"))
