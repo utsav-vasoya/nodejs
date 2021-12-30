@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Stripe Payment Demo</title>
+<body>
+	<h3>Welcome to Payment Gateway</h3>
+	<form action="payment" method="POST">
+        <input class="bg-transparent text-white p-2 h-10 mb-4" type="text" name="amount" placeholder="Amount">
+        <input class="bg-transparent text-white p-2 h-10 mb-4" type="text" name="description" placeholder="Discription">
+	<script
+		src="//checkout.stripe.com/v2/checkout.js"
+		class="stripe-button"
+		data-key="<%= key %>"
+		data-amount="<%= amount %>"
+        data-description="<%= description%>"
+		data-currency="inr"
+		data-name="Crafty Gourav"
+		data-locale="auto" >
+		</script>
+	</form>
+</body>
+</html>
