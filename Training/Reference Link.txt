@@ -1,3 +1,5 @@
+Twilio utsavit51---password--Utsav@123Utsav@123
+
 bcrypt Password---->https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
 
 CRUD Operation With Mongoose---------->https://www.digitalocean.com/community/tutorials/nodejs-crud-operations-mongoose-mongodb-atlas
@@ -17,3 +19,5 @@ External Api Call-------->https://pretagteam.com/question/external-api-calls-wit
                    ------->https://stackoverflow.com/questions/51844190/how-to-call-the-array-fields-inside-json-from-node-js
 
 Get Free API----->https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+
+Stripe Integration with Dynamic Add----->https://javascript.plainenglish.io/how-to-use-stripe-payments-in-node-js-using-express-b5fac6248463
