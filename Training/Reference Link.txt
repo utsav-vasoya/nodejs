@@ -21,3 +21,5 @@ External Api Call-------->https://pretagteam.com/question/external-api-calls-wit
 Get Free API----->https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
 Stripe Integration with Dynamic Add----->https://javascript.plainenglish.io/how-to-use-stripe-payments-in-node-js-using-express-b5fac6248463
+
+Mongoose Population---->https://alexanderzeitler.com/articles/mongoose-referencing-schema-in-properties-and-arrays/
