@@ -1,12 +1,11 @@
 const express = require('express');
 const multer = require('multer');
-
 const imageStorage = multer.diskStorage({
     destination: 'images',
     filename: (req, file, callback) => {
-        callback(null, file.fieldname + Date.now() + file.originalname)
+        callback(null, file.fieldname + file.originalname);
     }
-})
+});
 
 const imageUpload = multer({
     storage: imageStorage,
@@ -19,5 +18,5 @@ const imageUpload = multer({
         }
         callback(null, true)
     }
-})
+});
 module.exports = imageUpload;

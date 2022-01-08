@@ -4,9 +4,9 @@ const multer = require('multer');
 const videoStorage = multer.diskStorage({
     destination: 'videos',
     filename: (req, file, callback) => {
-        callback(null, file.fieldname + Date.now() + file.originalname)
+        callback(null, file.fieldname  + file.originalname)
     }
-})
+});
 
 const videoUpload = multer({
     storage: videoStorage,
@@ -19,5 +19,5 @@ const videoUpload = multer({
         }
         callback(null, true)
     }
-})
+});
 module.exports = videoUpload;

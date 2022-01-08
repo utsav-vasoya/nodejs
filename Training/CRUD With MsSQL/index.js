@@ -1,36 +1,29 @@
 const express = require("express");
-const sql = require('mssql')
 const app = express();
 const port = 1433;
+const sql = require('mssql');
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); 
 
-// const sqlConfig = {
-//     user: 'sa',
-//     password: 'vision',
-//     database: 'CRUD_With_MsSQL',
-//     server: 'localhost',
-// }
-
-let sqlConfig = {
-    server: 'localhost',
-    authentication: {
-        type: 'default',
-        options: {
-            userName: 'sa', // update me
-            password: 'vision' // update me
-        }
-    },
+var config = {
+    user: 'sa',
+    password: 'vision',
+    database: 'demodb',
+    server: 'VISION-036\\SQL2019',
     options: {
-        database: 'CRUD_With_MsSQL',
-        validateBulkLoadParameters:true,
-        encrypt: false,
-
-    }}
-sql.connect(sqlConfig, (err) => {
-
-    if (err) {
-        console.log(err)
-    } else {
-        console.log("DataBase Conected");
+        trustedconnection: true,
+        trustServerCertificate: true,
     }
-});
+};
+sql.connect(config, (err) => {
+    if (err) {
+        console.log(err);
+    }
+    else {
+        console.log("database conect");
+    }
+})
+
+app.use('/',require('./routes/user'))
 app.listen(port, console.log("Server Starting"));
