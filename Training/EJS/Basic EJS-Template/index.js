@@ -13,5 +13,4 @@ var data = [
 app.get('/', (req, res) => {
     res.render('Pages/Home.ejs', { datas: data })
 })
-
 app.listen(port, console.log("Server Starting"))

@@ -1,3 +1,7 @@
+Hashing Password----> (const salt = await bcrypt.genSalt(10);
+					   user.password = await bcrypt.hash(user.password, salt);)
+
+
 Twilio utsavit51---password--Utsav@123Utsav@123
 
 bcrypt Password---->https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
@@ -30,4 +34,9 @@ Swagger With Node.JS----->https://blog.cloudboost.io/adding-swagger-to-existing-
 					
 Many Project Related Node And Other ----->https://www.tutsmake.com/file-upload-in-mongodb-using-node-js/
 
-How to upload base 64 image in Nodejs Application----->https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs
+How to upload base 64 image in Nodejs Application----->https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs	
+
+Home Task-Github
+		 -Debug
+		 -Coding Standard
+		  

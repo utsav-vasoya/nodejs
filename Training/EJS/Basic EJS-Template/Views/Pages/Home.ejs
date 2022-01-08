@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <%-include('../Partials/Head.ejs')%>
 </head>
-
 <body>
-        <header>
-            <%-include('../partials/Header.ejs')%>
-        </header>
+    <header>
+        <%-include('../partials/Header.ejs')%>
+    </header>
     <ul>
-
-        <% datas.forEach((data)=> { %>   
+        <% datas.forEach((data)=> { %>
             <li>
                 <strong>
                     <%= data.name %>
@@ -20,11 +17,18 @@
                     Year Old
             </li>
             <% }); %>
-
     </ul>
+    <% datas.forEach((data)=> { %>
+        <strong>
+                <% if ( data.age> 22) { %>
+                    <p> Valid Age!!!</p>
+                 <%} else { %>
+                    <p> Not Allowed </p>
+                <% } %>
+        </strong>
+        <% }); %>
     <footer>
         <%-include('../partials/Footer.ejs')%>
     </footer>
 </body>
-
 </html>
