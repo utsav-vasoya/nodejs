@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Window Object</h1>
+    <h2>The localStorage Property</h2>
+
+    <p>Saved name is:</p>
+    <p id="demo"></p>
+    <script>
+        localStorage.setItem('car', JSON.stringify({
+            brand: "Suzuki",
+            color: "white",
+            price: 10000
+        }));
+        // Set Item
+        sessionStorage.setItem('Name', 'uv');
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("demo").innerHTML = localStorage.getItem("lastname")
+    </script>
+
+</body>
+
+</html>
