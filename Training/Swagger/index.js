@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/swagger-demo');
-const ejs = require('ejs');
+// const ejs = require('ejs');
 
 var UserSchema = new mongoose.Schema({
     email: {
@@ -22,20 +22,20 @@ var UserSchema = new mongoose.Schema({
 var User = mongoose.model('User', UserSchema);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 
-app.get('/users', (req, res) => {
-    res.render('home.ejs');
-})
 // app.get('/users', (req, res) => {
-//     User.find((err, user) => {
-//         if (err) {
-//             throw (err);
-//         } else {
-//             res.send(user);
-//         }
-//     });
-// });
+//     res.render('home.ejs');
+// })
+app.get('/users', (req, res) => {
+    User.find((err, user) => {
+        if (err) {
+            throw (err);
+        } else {
+            res.send(user);
+        }
+    });
+});
 app.post('/users', (req, res) => {
     var user = new User(req.body);
     user.save((err) => {
