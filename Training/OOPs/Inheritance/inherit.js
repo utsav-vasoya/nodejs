@@ -1,12 +1,12 @@
 //Inheritance example
 class person {
     constructor(name, age) {
-        this.name = name;
-        this.age = age;
+        this._name = name;
+        this._age = age;
     }
     //method to return the string
     getname() {
-        return `Name of person: ${this.name} And Age is ${this.age}`;
+        return `Name of person: ${this._name} And Age is ${this._age}`;
     }
 }
 class student extends person {
