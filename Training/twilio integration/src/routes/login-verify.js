@@ -3,19 +3,19 @@ const router = express.Router();
 const client = require('twilio')(process.env.TWILIO_ACOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
 router.get('/login', (req, res) => {
-    if (req.query.phonenumber) {
+    if (req.body.phonenumber) {
         client
             .verify
             .services(process.env.SERVICE_ID)
             .verifications
             .create({
-                to: `+${req.query.phonenumber}`,
-                channel: req.query.channel
+                to: `+${req.body.phonenumber}`,
+                channel: req.body.channel
             })
             .then(data => {
                 res.status(200).json({
                     message: "Verification is sent!!",
-                    phonenumber: req.query.phonenumber,
+                    phonenumber: req.body.phonenumber,
                     data
                 })
             })
@@ -27,14 +27,14 @@ router.get('/login', (req, res) => {
 })
 
 router.get('/verify', (req, res) => {
-    if (req.query.phonenumber && (req.query.code).length === 4) {
+    if (req.body.phonenumber && (req.body.code).length === 4) {
         client
             .verify
             .services(process.env.SERVICE_ID)
             .verificationChecks
             .create({
-                to: `+${req.query.phonenumber}`,
-                code: req.query.code
+                to: `+${req.body.phonenumber}`,
+                code: req.body.code
             })
             .then(data => {
                 if (data.status === "approved") {
@@ -47,7 +47,7 @@ router.get('/verify', (req, res) => {
     } else {
         res.status(400).send({
             message: "Wrong phone number or code :(",
-            phonenumber: req.query.phonenumber
+            phonenumber: req.body.phonenumber
         })
     }
 });
