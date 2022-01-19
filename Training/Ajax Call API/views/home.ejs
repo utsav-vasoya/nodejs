@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        AJAX calls
+    </title>
+</head>
+
+<body>
+    <h1>Ajax</h1>
+    <div id="champ"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $.ajax({
+                type: 'post',
+                url: '/orders',
+                success: function (order) {
+                    var html = '';
+                    for (var i = 0; i < order.length; i++) {
+                        html += '<h2>' + order[i].id + ' ' + order[i].name + ' ' + order[i].drink + '</h2>';
+                    }
+                    $('#champ').html(html);
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
