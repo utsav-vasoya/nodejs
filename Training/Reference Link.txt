@@ -36,6 +36,7 @@ Many Project Related Node And Other ----->https://www.tutsmake.com/file-upload-i
 
 How to upload base 64 image in Nodejs Application----->https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs	
 
+Twillio Verification------>https://www.twilio.com/docs/verify/api/verification?code-sample=code-start-a-verification-with-sms&code-language=twilio-cli&code-sdk-version=1.x#fetch-a-verification
 Home Task-Github
 		 -Debug
 		 -Coding Standard
