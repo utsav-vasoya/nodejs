@@ -1,44 +1,41 @@
-Hashing Password----> (const salt = await bcrypt.genSalt(10);
-					   user.password = await bcrypt.hash(user.password, salt);)
+Hashing Password => (const salt = await bcrypt.genSalt(10);
+					user.password = await bcrypt.hash(user.password, salt);)
 
+Twilio utsavit51 => password--Utsav@123Utsav@123
 
-Twilio utsavit51---password--Utsav@123Utsav@123
+bcrypt Password => https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
 
-bcrypt Password---->https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
+CRUD Operation With Mongoose => https://www.digitalocean.com/community/tutorials/nodejs-crud-operations-mongoose-mongodb-atlas
 
-CRUD Operation With Mongoose---------->https://www.digitalocean.com/community/tutorials/nodejs-crud-operations-mongoose-mongodb-atlas
+Mongodb with Mongoose => https://www.tutorialkart.com/nodejs/mongoose/insert-multiple-documents-to-mongodb/
 
-Mongodb with Mongoose------>https://www.tutorialkart.com/nodejs/mongoose/insert-multiple-documents-to-mongodb/
+EJS Basic Template => https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
 
-EJS Basic Template----->https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+How to get selected value in dropdown list using JavaScript => https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/
 
-How to get selected value in dropdown list using JavaScript ------>https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/
+Role Base Auth Youtube Video => https://www.youtube.com/watch?v=Rfid1N_pJa4
 
-Role Base Auth Youtube Video ------> https://www.youtube.com/watch?v=Rfid1N_pJa4
+Passport Auth Video => https://www.youtube.com/watch?v=lbmOoZuElKI
 
-Passport Auth Video------->https://www.youtube.com/watch?v=lbmOoZuElKI
+External Api Call => https://pretagteam.com/question/external-api-calls-with-express-nodejs-and-require-module
+	      		  => https://stackoverflow.com/questions/39301227/external-api-calls-with-express-node-js-and-require-module
+                  => https://stackoverflow.com/questions/51844190/how-to-call-the-array-fields-inside-json-from-node-js
 
-External Api Call-------->https://pretagteam.com/question/external-api-calls-with-express-nodejs-and-require-module
-	      --------->https://stackoverflow.com/questions/39301227/external-api-calls-with-express-node-js-and-require-module
-                   ------->https://stackoverflow.com/questions/51844190/how-to-call-the-array-fields-inside-json-from-node-js
+Get Free API => https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
-Get Free API----->https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+Stripe Integration with Dynamic Add => https://javascript.plainenglish.io/how-to-use-stripe-payments-in-node-js-using-express-b5fac6248463
+									=> https://www.digitalocean.com/community/tutorials/nodejs-intro-stripe-payments
+									=> https://dev.to/cyberwolve/stripe-payment-gateway-integration-in-node-js-5733
+Mongoose Population => https://alexanderzeitler.com/articles/mongoose-referencing-schema-in-properties-and-arrays/
 
-Stripe Integration with Dynamic Add ------>https://javascript.plainenglish.io/how-to-use-stripe-payments-in-node-js-using-express-b5fac6248463
-									------>https://www.digitalocean.com/community/tutorials/nodejs-intro-stripe-payments
-									------>https://dev.to/cyberwolve/stripe-payment-gateway-integration-in-node-js-5733
-Mongoose Population---->https://alexanderzeitler.com/articles/mongoose-referencing-schema-in-properties-and-arrays/
-
-Swagger With Node.JS----->https://blog.cloudboost.io/adding-swagger-to-existing-node-js-project-92a6624b855b
-					----->https://github.com/GenFirst/swagger-to-existing-nodejs-project/blob/master/backend/swagger.json
+Swagger With Node.JS => https://blog.cloudboost.io/adding-swagger-to-existing-node-js-project-92a6624b855b
+					 => https://github.com/GenFirst/swagger-to-existing-nodejs-project/blob/master/backend/swagger.json
 					
-Many Project Related Node And Other ----->https://www.tutsmake.com/file-upload-in-mongodb-using-node-js/
+Many Project Related Node And Other => https://www.tutsmake.com/file-upload-in-mongodb-using-node-js/
 
-How to upload base 64 image in Nodejs Application----->https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs	
+How to upload base 64 image in Nodejs Application => https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs	
 
-Twillio Verification------>https://www.twilio.com/docs/verify/api/verification?code-sample=code-start-a-verification-with-sms&code-language=twilio-cli&code-sdk-version=1.x#fetch-a-verification
-Home Task-Github
-		 -Debug
-		 -Coding Standard
-		 -session 
-		  
+Twillio Verification => https://www.twilio.com/docs/verify/api/verification?code-sample=code-start-a-verification-with-sms&code-language=twilio-cli&code-sdk-version=1.x#fetch-a-verification
+					 => https://www.twilio.com/docs/verify/api/verification-check
+
+Send Mail Using Dyanmic Content => https://stackoverflow.com/questions/43853994/create-dynamic-html-with-ejs-and-node

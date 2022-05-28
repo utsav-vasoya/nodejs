@@ -27,7 +27,7 @@ router.post('/upload/image', async (req, res, file) => {
     let imageBuffer = response.data;
     let type = response.type;
     let extension = mime.getExtension(type);
-    var fileName = new Date().getTime() + req.file.originalname + '.' + extension;
+    var fileName = "image." + new Date().getTime() + extension;
     try {
         fs.writeFileSync("./images/" + fileName, imageBuffer, 'utf8');
         return res.send({ "status": "success" });
