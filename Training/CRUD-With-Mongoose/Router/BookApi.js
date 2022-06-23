@@ -2,10 +2,10 @@ require('dotenv').config()
 const express = require('express')
 const router = express.Router();
 const bookschema = require('../Models/BookSchema');
-const adminschema = require('../Models/AdminSchema');
-const userschema = require('../Models/UserSchema');
+// const adminschema = require('../Models/AdminSchema');
+// const userschema = require('../Models/UserSchema');
 const jwt = require('jsonwebtoken')
-const auth = require('../Auth-Middleware/Middleware')
+// const auth = require('../Auth-Middleware/Middleware')
 
 router.post('/login', async (req, res) => {
     try {
