@@ -8,7 +8,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/swagger-demo');
 // const ejs = require('ejs');
-
+// For run call this http://localhost:3000/api-docs/
 var UserSchema = new mongoose.Schema({
     email: {
         type: String, required: true,
