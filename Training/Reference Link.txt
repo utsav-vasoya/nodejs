@@ -1,41 +1,44 @@
-Hashing Password => (const salt = await bcrypt.genSalt(10);
-					user.password = await bcrypt.hash(user.password, salt);)
+Hashing Password----> (const salt = await bcrypt.genSalt(10);
+					   user.password = await bcrypt.hash(user.password, salt);)
 
-Twilio utsavit51 => password--Utsav@123Utsav@123
 
-bcrypt Password => https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
+Twilio utsavit51---password--Utsav@123Utsav@123
 
-CRUD Operation With Mongoose => https://www.digitalocean.com/community/tutorials/nodejs-crud-operations-mongoose-mongodb-atlas
+bcrypt Password---->https://www.loginradius.com/blog/async/hashing-user-passwords-using-bcryptjs/
 
-Mongodb with Mongoose => https://www.tutorialkart.com/nodejs/mongoose/insert-multiple-documents-to-mongodb/
+CRUD Operation With Mongoose---------->https://www.digitalocean.com/community/tutorials/nodejs-crud-operations-mongoose-mongodb-atlas
 
-EJS Basic Template => https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+Mongodb with Mongoose------>https://www.tutorialkart.com/nodejs/mongoose/insert-multiple-documents-to-mongodb/
 
-How to get selected value in dropdown list using JavaScript => https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/
+EJS Basic Template----->https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
 
-Role Base Auth Youtube Video => https://www.youtube.com/watch?v=Rfid1N_pJa4
+How to get selected value in dropdown list using JavaScript ------>https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/
 
-Passport Auth Video => https://www.youtube.com/watch?v=lbmOoZuElKI
+Role Base Auth Youtube Video ------> https://www.youtube.com/watch?v=Rfid1N_pJa4
 
-External Api Call => https://pretagteam.com/question/external-api-calls-with-express-nodejs-and-require-module
-	      		  => https://stackoverflow.com/questions/39301227/external-api-calls-with-express-node-js-and-require-module
-                  => https://stackoverflow.com/questions/51844190/how-to-call-the-array-fields-inside-json-from-node-js
+Passport Auth Video------->https://www.youtube.com/watch?v=lbmOoZuElKI
 
-Get Free API => https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+External Api Call-------->https://pretagteam.com/question/external-api-calls-with-express-nodejs-and-require-module
+	      --------->https://stackoverflow.com/questions/39301227/external-api-calls-with-express-node-js-and-require-module
+                   ------->https://stackoverflow.com/questions/51844190/how-to-call-the-array-fields-inside-json-from-node-js
 
-Stripe Integration with Dynamic Add => https://javascript.plainenglish.io/how-to-use-stripe-payments-in-node-js-using-express-b5fac6248463
-									=> https://www.digitalocean.com/community/tutorials/nodejs-intro-stripe-payments
-									=> https://dev.to/cyberwolve/stripe-payment-gateway-integration-in-node-js-5733
-Mongoose Population => https://alexanderzeitler.com/articles/mongoose-referencing-schema-in-properties-and-arrays/
+Get Free API----->https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
-Swagger With Node.JS => https://blog.cloudboost.io/adding-swagger-to-existing-node-js-project-92a6624b855b
-					 => https://github.com/GenFirst/swagger-to-existing-nodejs-project/blob/master/backend/swagger.json
+Stripe Integration with Dynamic Add ------>https://javascript.plainenglish.io/how-to-use-stripe-payments-in-node-js-using-express-b5fac6248463
+									------>https://www.digitalocean.com/community/tutorials/nodejs-intro-stripe-payments
+									------>https://dev.to/cyberwolve/stripe-payment-gateway-integration-in-node-js-5733
+Mongoose Population---->https://alexanderzeitler.com/articles/mongoose-referencing-schema-in-properties-and-arrays/
+
+Swagger With Node.JS----->https://blog.cloudboost.io/adding-swagger-to-existing-node-js-project-92a6624b855b
+					----->https://github.com/GenFirst/swagger-to-existing-nodejs-project/blob/master/backend/swagger.json
 					
-Many Project Related Node And Other => https://www.tutsmake.com/file-upload-in-mongodb-using-node-js/
+Many Project Related Node And Other ----->https://www.tutsmake.com/file-upload-in-mongodb-using-node-js/
 
-How to upload base 64 image in Nodejs Application => https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs	
+How to upload base 64 image in Nodejs Application----->https://jsonworld.com/demo/how-to-upload-base64-image-in-nodejs	
 
-Twillio Verification => https://www.twilio.com/docs/verify/api/verification?code-sample=code-start-a-verification-with-sms&code-language=twilio-cli&code-sdk-version=1.x#fetch-a-verification
-					 => https://www.twilio.com/docs/verify/api/verification-check
-
-Send Mail Using Dyanmic Content => https://stackoverflow.com/questions/43853994/create-dynamic-html-with-ejs-and-node
+Twillio Verification------>https://www.twilio.com/docs/verify/api/verification?code-sample=code-start-a-verification-with-sms&code-language=twilio-cli&code-sdk-version=1.x#fetch-a-verification
+Home Task-Github
+		 -Debug
+		 -Coding Standard
+		 -session 
+		  
