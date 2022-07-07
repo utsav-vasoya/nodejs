@@ -30,10 +30,10 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = {
     from: process.env.EMAIL,
-    to: "utsavvasoya89@gmail.com",
+    to: "utsavvasoya.vision@gmail.com",
     subject: "Node.js Email with Secure OAuth",
     generateTextFromHTML: true,
-    html: "<b>test</b>"
+    html: "<b>Hello</b>"
 };
 
 transporter.sendMail(mailOptions, (error, response) => {
